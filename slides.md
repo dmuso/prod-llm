@@ -1,15 +1,17 @@
 ---
 theme: default
-title: Hosting an LLM in production
+title: Hosting LLMs in production and failing to scale to 10 users
 info: |
   Meetup talk — 2 Sept 2026
   Speaker: Dan Harper
 class: text-center
 ---
 
-# Hosting an LLM in production
+# Hosting LLMs in production
 
-<img src="/title-one-gpu.png" class="max-h-80 mx-auto rounded-lg mt-2" alt="" />
+<div class="text-xl opacity-70 font-normal mt-1">and failing to scale to 10 users</div>
+
+<img src="/title-one-gpu.png" class="max-h-72 mx-auto rounded-lg mt-4" alt="" />
 
 <div class="opacity-70 mt-2">Dan Harper · 2 Sept 2026</div>
 

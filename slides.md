@@ -158,23 +158,52 @@ Four GPUs for now.
 
 ---
 layout: image
+image: /complexity-weights.png
+---
+
+<!--
+You think VRAM is just the model. Quant is the cheat code. Q8, Q4, Q3. Smaller doll, it fits.
+
+Don't stop here.
+-->
+
+---
+layout: image
+image: /complexity-kv.png
+---
+
+<!--
+Weights sit still. KV grows with context and users. You can quant that too.
+
+Now two memory piles. Concurrency is hiding in the second one.
+-->
+
+---
+layout: image
+image: /complexity-servers.png
+---
+
+<!--
+vLLM: crowded bus, concurrency, wants more VRAM.
+
+llama.cpp: bike, exotic parts, one chair.
+
+24 GB forced the bike. Don't expect both.
+-->
+
+---
+layout: image
 image: /serving-complexity.png
 ---
 
 <!--
-This is the one you can slow down on. Weights sit there. KV cache moves with users.
+Arch locks: this quant does not run on that GPU.
 
-Two common servers. vLLM: production default, concurrency. Needs more VRAM.
+Spec decode is a second model. Fat prompts blow the clock. Prefix stamp.
 
-llama.cpp: portable, exotic GPUs / models / quants. Sucks at concurrency. Uses less VRAM.
+New model on the conveyor. Agent octopus, 50x.
 
-You wanted 4-bit. You were on 3. Q3 plus a real context would not fit vLLM on 24 GB. Forced llama.cpp. No concurrency story.
-
-Unreliable: small prompts fine. Fat agent prompts, three minutes, then the four-minute timeout.
-
-Extra VRAM headroom is concurrency. Quantize weights and KV separately if you want. You still lose something.
-
-Don't: pick 24 GB and expect vLLM, concurrency, and a fat agent loop.
+This is why the small box lied.
 -->
 
 ---

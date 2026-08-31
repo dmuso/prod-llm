@@ -22,37 +22,25 @@ Don't lecture. Don't go deep on the why-host list. Personal colour only.
 -->
 
 ---
-layout: two-cols
-class: text-left
+layout: center
 ---
 
-# About me
-
-<img src="/dan-harper.jpg" class="rounded-full w-52 h-52 object-cover mt-6 shadow" alt="Dan Harper" />
-
-::right::
-
-<div class="pt-8">
-
-**Dan Harper**
-
-Melbourne, Australia
-
-Fully Autonomous AI Coding
-
-[velocifire.com](https://velocifire.com)
-
-<a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-2 mt-8 text-2xl font-semibold !border-none">
-  <img src="/x-logo.svg" class="w-7 h-7" alt="" />
-  <span>@dan_harper</span>
-</a>
-
+<div class="flex items-center justify-center gap-16">
+  <img src="/dan-harper.jpg" class="rounded-full w-56 h-56 object-cover shadow-lg shrink-0" alt="Dan Harper" />
+  <div class="text-left leading-relaxed">
+    <div class="text-5xl font-bold">Dan Harper</div>
+    <div class="text-2xl mt-3 opacity-80">CTO @ AskYourTeam</div>
+    <a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-3 mt-8 text-2xl font-semibold !border-none">
+      <img src="/x-logo.svg" class="w-7 h-7" alt="X" />
+      <span>@dan_harper</span>
+    </a>
+  </div>
 </div>
 
 <!--
-You're Dan Harper. Melbourne. Fully Autonomous AI Coding.
+You're Dan Harper, CTO at AskYourTeam, Melbourne.
 
-Website is velocifire.com. Point them at X if they want to follow: x.com/dan_harper
+Point them at X if they want to follow: x.com/dan_harper
 
 Don't over-introduce. Ten seconds, then into the war story.
 -->

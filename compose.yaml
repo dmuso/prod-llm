@@ -1,0 +1,11 @@
+services:
+  slidev:
+    image: node:22-bookworm-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3030:3030"
+    environment:
+      npm_config_update_notifier: "false"
+    command: sh -c "npm install && npx slidev --remote"

@@ -157,13 +157,9 @@ Four GPUs for now.
 -->
 
 ---
-layout: center
-class: text-center
+layout: image
+image: /serving-complexity.png
 ---
-
-# vLLM, llama.cpp & VRAM
-
-<img src="/vram-concurrency.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
 This is the one you can slow down on. Weights sit there. KV cache moves with users.

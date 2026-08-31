@@ -57,13 +57,11 @@ class: text-center
 <img src="/why-leave-api.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-Doors: privacy, sovereignty, custom models, freedom. Pricing last, with an asterisk. It depends on a huge amount of things.
-
-Don't go deep on the list. Colour: why this list applied to you.
-
-Your priorities: 1) data sovereignty 2) per-token pricing would be very expensive.
-
-You started on hosted APIs like everyone else. Grok, OpenAI, Bedrock, Anthropic. Then you walked out.
+Privacy
+Sovereignty
+Custom models
+Freedom
+Pricing*
 -->
 
 ---
@@ -76,19 +74,19 @@ class: text-center
 <img src="/bedrock-overseas.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-What do I already have with local AU inference? Bedrock. Obvious.
+99% of models infer overseas. 
 
-99% of models infer overseas. Claude was not an option when you started. It is now. Ignore that.
+No Claude.
 
-Shrink the problem until the smaller Amazon model fits. Nova.
+Nova?
 
-Product: data analytics platform, JSON query DSL. Treated the LLM like one request/response.
+JSON query DSL. 
 
-RAG-shaped prompt: natural language + DSL + reference records. It kind of worked. It sucked. Nova wasn't smart enough.
+Treated the LLM like one request/response.
 
-OpenRouter next. Same code, swap the pipe. Feel out capability vs size vs what you could host yourself.
+RAG-shaped. It Sucked.
 
-Don't: assume Sydney in the console means the GPU is in Sydney.
+OpenRouter next -> Qwen 35B A3B Win!
 -->
 
 ---
@@ -101,23 +99,17 @@ class: text-center
 <img src="/ec2-sucked.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-Workable model in mind (Qwen 35B-A3B, MoE). Now find a GPU in Australia.
+Prices??? OMG
 
-EC2 GPU list price is ridiculous. Five times, ten times a CPU box. Not per-token anymore. Still paying.
+24 GB, AWS G5. Q3
 
-Aim small: 24 GB, AWS G5. Q3 to fit. Smarter than Nova. It ran.
+Agentic loop. Mind-blowing. 50x use
 
-Then the agentic loop. Tools, explore the data. Mind-blowing. Also 25 calls, fat tokens. Call it 50x.
+Oracle Gateway.
 
-Plan: scaling group, one box is about one concurrent request, capacity reservations.
+6x EC2 Failed to scale to 3x users.
 
-Fine through early dev. More developers, testers, customer demos: not scaling.
-
-H100s in Australia: basically never. G5 scale-up: two, three hour wait. Worst case.
-
-Pre-revenue MVP. Five or six internal users and it's already struggling.
-
-Don't: plan to ASG your way out of an Australian GPU shortage.
+No EC2 Availability
 -->
 
 ---
@@ -130,17 +122,15 @@ class: text-center
 <img src="/hyperscalers.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-Google, Oracle, whoever might have cards. Same movie as AWS.
+Google: nope.
 
-GCP: nicer GPU attach. Ancient CPUs, ancient GPUs. Fancy stuff unobtainium.
+Oracle: haha, nope.
 
-Didn't bother with Microsoft. Three examples is enough.
+Azure: who cares.
 
-LLM is already slower than the flight to Virginia. Hyperscalers put GPUs where power is cheap and people are.
+Ancient GPUs
 
-Australia: small market, expensive power. Close to zero.
-
-Don't: shop hyperscalers expecting a different ending.
+Australia == Arse End Of The World
 -->
 
 ---
@@ -153,19 +143,17 @@ class: text-center
 <img src="/bare-metal-2am.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-Bare metal: different costing. You support it. 2am in a data centre. Painful.
+Bare Metal? Options
 
-In-between: VPS-ish, still a real GPU. Micron21 in Melbourne.
+VPS-ish? -> Micron21
 
-Old banknote-security shop. Hardcore DC. Spare capacity.
+12-month commit. 
 
-Priced against 10 B2B customers on AWS. Micron21 cheaper.
+GPUs in 2 to 52 weeks
 
-Trial: one GPU, kick the tires. 12-month commit. A100s in two to four weeks if they're not sitting on a spare. Not elastic.
+Not elastic.
 
-Ended up at four GPUs, one box each. Round-robin. The clever ASG balancer can wait.
-
-Don't: confuse "I could buy a server" with "I want to debug hardware at 2am."
+Four GPUs for now.
 -->
 
 ---

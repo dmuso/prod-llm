@@ -157,6 +157,23 @@ Four GPUs for now.
 -->
 
 ---
+layout: center
+class: text-center
+---
+
+# Does my model fit in VRAM?
+
+<img src="/does-it-fit-vram.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
+
+<!--
+Simplest question.
+
+The internet will give you a simple answer.
+
+In reality the answer is very complicated.
+-->
+
+---
 layout: image
 image: /complexity-weights.png
 ---

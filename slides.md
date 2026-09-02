@@ -214,13 +214,17 @@ image: /serving-complexity.png
 ---
 
 <!--
-Arch locks: this quant does not run on that GPU.
+The total number of variables is significant.
 
-Spec decode is a second model. Fat prompts blow the clock. Prefix stamp.
+GPU architecture -> quant
 
-New model on the conveyor. Agent octopus, 50x.
+Spec decode -> faster, more VRAM
 
-This is why the small box lied.
+Prefix caching
+
+New model comes out
+
+Decode vs Pre-fill performance
 -->
 
 ---
@@ -233,17 +237,15 @@ class: text-center
 <img src="/happy-days.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-Same product. Same users. Staging, then prod. The flakiness vanished.
+So, how did we get to a good outcome?
 
-A100 40 GB instead of A10 24 GB. Same generation, more VRAM. Finally vLLM.
+AWS -> Micron21:  A100 40 GB instead of A10 24 GB. Same generation, more VRAM. Finally vLLM.
 
-Weights load once. KV cache moves with activity. Headroom equals concurrent users.
+Weights, KV cache, Headroom.
 
-Scaled far better than the G5. You can be naive about the load balancer and still get away with it.
+Naive load balancer.
 
 Not roses: no elastic. Sized for 10 customers plus fat. Four fixed cards.
-
-Don't: stay on 24 GB out of stubbornness once you've seen 40 GB plus vLLM.
 -->
 
 ---
@@ -256,25 +258,17 @@ class: text-center
 <img src="/small-fast-smart.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
-Don't put the big model on every row. Definitely not every cell.
+CSV: 20 columns, 10,000 rows = 200,000 points.
 
-20 columns times 10,000 rows is 200,000 calls. A real LLM would take weeks.
+weeks of LLM.
 
-Fast dumb ML for classify/score. Needed semantic tags. No model existed for the domain.
+Gemma 4 E2B. Dumb but fast, can we make it smart?
 
-Fine-tune a tiny one. Gemma 4 E2B. Dumb as rocks, fast enough if you make it smart.
+1200 records from frontier models; 12 hours training on MBP. Eval it.
 
-You had no idea. Codex, LoRA, MacBook, prompt/response pairs. 1200 records from frontier models. 12 hours.
+Result: EC2 G5 plus vLLM, 128x, stupidly fast.
 
-Eval loop: point an agent at a number, let it thrash, keep what went up.
-
-Result: G5 plus vLLM, 128 in flight, stupidly fast.
-
-Longer game: capture traces, fine-tune SLMs, swap expensive LLM calls.
-
-Massive success. You need a GPU to pull it off.
-
-Don't: send 200,000 cells through the big model.
+Capture traces, fine-tune SLMs, swap expensive LLM calls.
 -->
 
 ---

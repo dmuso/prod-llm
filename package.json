@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "slidev --open",
     "build": "slidev build",
-    "export": "slidev export"
+    "export": "slidev export",
+    "dev:cto": "slidev --open slides-cto.md",
+    "build:cto": "slidev build slides-cto.md",
+    "export:cto": "slidev export slides-cto.md"
   },
   "devDependencies": {
     "@slidev/cli": "^52.1.0",

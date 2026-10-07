@@ -1,15 +1,17 @@
 ---
 theme: default
-title: The reason I started isn't the reason I stayed
+title: Why I Stopped Worrying and Loved the Tokens
 info: |
   CTO talk — 8 Oct 2026
+  A Year Self Hosting LLMs in Production
   Speaker: Dan Harper
+colorSchema: dark
 class: text-center
 ---
 
-<h1 class="!text-4xl">The reason I started isn't the reason I stayed</h1>
+<h1 class="!text-4xl">Why I Stopped Worrying and Loved the Tokens</h1>
 
-<div class="text-xl opacity-70 font-normal mt-1">Self-hosting LLMs: a year of receipts</div>
+<div class="text-xl opacity-70 font-normal mt-1">A Year Self Hosting LLMs in Production</div>
 
 <div class="flex items-center justify-center gap-10 mt-8">
   <img src="/dan-harper.jpg" class="rounded-full w-40 h-40 object-cover shadow-lg shrink-0" alt="Dan Harper" />
@@ -108,13 +110,13 @@ class: text-center
 # One feature, two bills
 
 <div class="grid grid-cols-2 gap-12 mt-10 max-w-3xl mx-auto">
-  <div class="rounded-xl border-2 border-gray-300 p-8">
+  <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-8">
     <div class="text-xl opacity-70">Cloud API (per token)</div>
     <div class="text-6xl font-bold mt-4">$___</div>
     <div class="text-2xl mt-2 opacity-80">___ tokens</div>
     <div class="text-sm opacity-60 mt-4">[feature name] · [period]</div>
   </div>
-  <div class="rounded-xl border-2 border-gray-300 p-8">
+  <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-8">
     <div class="text-xl opacity-70">Our own GPUs</div>
     <div class="text-6xl font-bold mt-4">$___</div>
     <div class="text-2xl mt-2 opacity-80">___ tokens</div>

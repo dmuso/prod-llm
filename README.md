@@ -17,7 +17,7 @@ docker compose up
 CTO deck:
 
 ```bash
-docker compose run --service-ports slidev sh -c "npm install && npx slidev --remote slides-cto.md"
+docker compose run --service-ports slidev sh -c "npm install && npx slidev slides-cto.md --remote"
 ```
 
 Or with Node locally:

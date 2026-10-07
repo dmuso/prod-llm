@@ -9,23 +9,25 @@ colorSchema: dark
 class: text-center
 ---
 
-<h1 class="!text-4xl">Why I Stopped Worrying and Loved the Tokens</h1>
-
-<div class="text-xl opacity-70 font-normal mt-1">A Year Self Hosting LLMs in Production</div>
-
-<div class="flex items-center justify-center gap-10 mt-8">
-  <img src="/dan-harper.jpg" class="rounded-full w-40 h-40 object-cover shadow-lg shrink-0" alt="Dan Harper" />
-  <div class="text-left leading-relaxed">
-    <div class="text-4xl font-bold">Dan Harper</div>
-    <div class="text-xl mt-2 opacity-80">CTO @ AskYourTeam</div>
-    <a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-2 mt-4 text-xl font-semibold !border-none">
-      <img src="/x-logo.svg" class="w-6 h-6" alt="X" />
-      <span>@dan_harper</span>
-    </a>
+<div class="grid grid-cols-[3fr_2fr] gap-8 items-center h-full">
+  <img src="/token-bomb.jpg" class="w-full rounded-lg shadow-lg" alt="Aussie bloke riding a gold TOKENS bomb" />
+  <div class="text-left">
+    <h1 class="!text-3xl !leading-tight !mb-0">Why I Stopped<br>Worrying and<br>Loved the Tokens</h1>
+    <div class="text-lg opacity-70 font-normal mt-3">A Year Self Hosting LLMs in Production</div>
+    <div class="flex items-center gap-4 mt-8">
+      <img src="/dan-harper.jpg" class="rounded-full w-20 h-20 object-cover shadow-lg shrink-0" alt="Dan Harper" />
+      <div class="leading-snug">
+        <div class="text-2xl font-bold">Dan Harper</div>
+        <div class="text-base opacity-80">CTO @ AskYourTeam</div>
+        <a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-2 mt-1 text-base font-semibold !border-none">
+          <img src="/x-logo.svg" class="w-4 h-4" alt="X" />
+          <span>@dan_harper</span>
+        </a>
+      </div>
+    </div>
+    <div class="opacity-70 mt-6">8 Oct 2026</div>
   </div>
 </div>
-
-<div class="opacity-70 mt-6">8 Oct 2026</div>
 
 <!--
 Ten seconds. Then into it.

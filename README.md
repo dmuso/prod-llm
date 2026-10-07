@@ -9,7 +9,7 @@ Node runs in Docker Compose. You do not need Node on the host.
 | Deck | File | Docker | Node |
 | --- | --- | --- | --- |
 | Meetup (default) | `decks/meetup/slides.md` | `docker compose up` | `npm run dev:meetup` |
-| CTO cut | `decks/cto/slides.md` | `DECK=cto docker compose up` | `npm run dev:cto` |
+| CTO talk (8 Oct 2026) | `decks/cto/slides.md` | `DECK=cto docker compose up` | `npm run dev:cto` |
 
 Then open http://localhost:3030 (presenter view at http://localhost:3030/presenter).
 

@@ -40,7 +40,7 @@ layout: center
 class: text-center
 ---
 
-# The cloud was overseas
+# Australia: Good at Digging Holes
 
 <img src="/bedrock-overseas.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
@@ -139,7 +139,7 @@ layout: center
 class: text-center
 ---
 
-# What no provider could sell us
+# Meet the Team
 
 <div class="grid grid-cols-3 gap-6 mt-10 max-w-4xl mx-auto">
   <div class="flex flex-col items-center">
@@ -147,21 +147,18 @@ class: text-center
       <img src="/model-alice.jpg" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[110%] max-w-none" alt="Alice" />
     </div>
     <div class="text-4xl font-bold mt-5">Alice</div>
-    <div class="text-sm text-gray-400 mt-1">Alice in Wonderland</div>
   </div>
   <div class="flex flex-col items-center">
     <div class="relative w-52 h-52 rounded-full overflow-hidden ring-4 ring-amber-200/40 shadow-xl">
       <img src="/model-dorothy.jpg" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[110%] max-w-none" alt="Dorothy" />
     </div>
     <div class="text-4xl font-bold mt-5">Dorothy</div>
-    <div class="text-sm text-gray-400 mt-1">The Wizard of Oz</div>
   </div>
   <div class="flex flex-col items-center">
     <div class="relative w-52 h-52 rounded-full overflow-hidden ring-4 ring-amber-200/40 shadow-xl">
       <img src="/model-lucy.jpg" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[110%] max-w-none" alt="Lucy" />
     </div>
     <div class="text-4xl font-bold mt-5">Lucy</div>
-    <div class="text-sm text-gray-400 mt-1">The Lion, the Witch and the Wardrobe</div>
   </div>
 </div>
 

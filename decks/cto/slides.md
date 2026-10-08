@@ -1,6 +1,6 @@
 ---
 theme: default
-title: Why I Stopped Worrying and Loved the Tokens
+title: Why I Stopped Worrying and Learned to Love the Token
 info: |
   CTO talk — 8 Oct 2026
   A Year Self Hosting LLMs in Production
@@ -12,7 +12,7 @@ class: text-center
 <div class="grid grid-cols-[3fr_2fr] gap-8 items-center h-full">
   <img src="/token-bomb.jpg" class="w-full rounded-lg shadow-lg" alt="Aussie bloke riding a gold TOKENS bomb" />
   <div class="text-left">
-    <h1 class="!text-3xl !leading-tight !mb-0">Why I Stopped<br>Worrying and<br>Loved the Tokens</h1>
+    <h1 class="!text-3xl !leading-tight !mb-0">Why I Stopped<br>Worrying and Learned<br>to Love the Token</h1>
     <div class="text-lg opacity-70 font-normal mt-3">A Year Self Hosting LLMs in Production</div>
     <div class="flex items-center gap-4 mt-8">
       <img src="/dan-harper.jpg" class="rounded-full w-20 h-20 object-cover shadow-lg shrink-0" alt="Dan Harper" />

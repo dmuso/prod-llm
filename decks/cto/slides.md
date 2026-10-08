@@ -109,29 +109,38 @@ layout: center
 class: text-center
 ---
 
-# One feature, two bills
+# One month, two bills
 
-<div class="grid grid-cols-2 gap-12 mt-10 max-w-3xl mx-auto">
-  <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-8">
+<div class="grid grid-cols-[1fr_auto_1fr] gap-6 items-center mt-8 max-w-4xl mx-auto">
+  <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-6">
     <div class="text-xl opacity-70">Cloud API (per token)</div>
-    <div class="text-6xl font-bold mt-4">$___</div>
-    <div class="text-2xl mt-2 opacity-80">___ tokens</div>
-    <div class="text-sm opacity-60 mt-4">[feature name] · [period]</div>
+    <div class="text-6xl font-bold mt-4 text-red-400">$84,240</div>
+    <div class="text-lg opacity-80 mt-2">AUD / month</div>
+    <div class="text-sm opacity-60 mt-3">at Claude Sonnet pricing</div>
   </div>
-  <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-8">
+  <div class="text-3xl font-bold text-amber-300">~13x</div>
+  <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-6">
     <div class="text-xl opacity-70">Our own GPUs</div>
-    <div class="text-6xl font-bold mt-4">$___</div>
-    <div class="text-2xl mt-2 opacity-80">___ tokens</div>
-    <div class="text-sm opacity-60 mt-4">[feature name] · [period]</div>
+    <div class="text-6xl font-bold mt-4 text-green-400">$6,500</div>
+    <div class="text-lg opacity-80 mt-2">AUD / month</div>
+    <div class="text-sm opacity-60 mt-3">local LLM infra</div>
   </div>
 </div>
 
+<div class="text-base opacity-70 mt-8">All LLM usage across the product · 1 month · 27 customers · 1.485M API calls · 46.8B input / 2.34B output tokens</div>
+
 <!--
-One real feature. Measured tokens. Two prices.
+This is everything. All LLM usage across the whole product. No cherry-picking.
 
-[SAY: feature X used N tokens over <period>. At API pricing that's $A. On our cards it's $B.]
+One month. 27 customers. 1.5 million calls.
 
-Same tokens. Different bill shape.
+Nearly 47 billion tokens in. 2.3 billion out.
+
+At Sonnet prices, that's about 84 grand a month. AUD.
+
+On our own cards? 6.5.
+
+Same workload. Thirteen times cheaper.
 -->
 
 ---

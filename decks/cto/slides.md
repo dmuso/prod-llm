@@ -40,35 +40,24 @@ layout: center
 class: text-center
 ---
 
-# Why we went down this path
+# The cloud was overseas
 
-<img src="/why-leave-api.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
+<img src="/bedrock-overseas.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
 Sovereignty. That was the reason.
 
 99% of models infer overseas.
 
-Bedrock sucked. EC2 sucked worse.
+We're on AWS. Bedrock sucked. EC2 sucked worse.
 
 Hyperscalers: nope.
 
 Australia is a GPU desert. Arse end of the world.
 
-One minute of war colour. Max. Move on.
--->
+One minute of war colour. Max.
 
----
-layout: center
-class: text-center
----
-
-# Not the reason I stayed
-
-<img src="/bedrock-overseas.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
-
-<!--
-The reason I started isn't the reason I stayed.
+Then the pivot: the reason I started isn't the reason I stayed.
 
 Sovereignty is softening. In-region providers keep turning up.
 
@@ -150,33 +139,6 @@ layout: center
 class: text-center
 ---
 
-# The catch with a flat bill
-
-<img src="/bare-metal-2am.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
-
-<!--
-12-month commit.
-
-GPUs in 2 to 52 weeks.
-
-Not elastic. Four fixed cards.
-
-Sizing is genuinely hard. Budget people for it.
-
-Happy days: A100 40 GB + vLLM. Flakiness vanished.
-
-Rule of thumb:
-Spiky, low or unpredictable usage? Stay on tokens.
-Steady, high-volume, agentic or batch? Own the hardware.
-
-Argue with me. I dare you.
--->
-
----
-layout: center
-class: text-center
----
-
 # What no provider could sell us
 
 <img src="/small-fast-smart.png" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
@@ -192,6 +154,10 @@ Long game: capture traces, fine-tune small models, swap out expensive LLM calls.
 
 Only possible because we own the GPUs.
 
+The catch: 12-month commit, not elastic, four fixed cards. Sizing is hard, budget people for it.
+
+Rule of thumb: spiky or unpredictable? Stay on tokens. Steady, high-volume, agentic or batch? Own the hardware. Argue with me at the roundtable.
+
 Your bill shape is your usage shape.
 -->
 
@@ -200,17 +166,23 @@ layout: center
 class: text-center
 ---
 
-# Questions
+# Thanks!
 
-<img src="/questions.png" class="max-h-80 mx-auto rounded-lg mt-2" alt="" />
+<img src="/questions.png" class="max-h-64 mx-auto rounded-lg mt-2" alt="" />
 
-<a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-2 mt-4 text-2xl font-semibold !border-none">
-  <img src="/x-logo.svg" class="w-7 h-7" alt="" />
+<div class="text-2xl font-bold mt-4">Dan Harper</div>
+
+<a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-2 mt-2 text-xl font-semibold !border-none">
+  <img src="/x-logo.svg" class="w-6 h-6" alt="X" />
   <span>@dan_harper</span>
 </a>
 
-<!--
-Leave this up. Don't fill silence with a new chapter.
+<div class="text-lg opacity-70 mt-3">See you at the roundtable</div>
 
-They can follow on X if they want more of this.
+<!--
+Thanks. Short and sweet.
+
+Roundtable's next, not Q&A. Hand over, grab a seat.
+
+X if they want more of this.
 -->

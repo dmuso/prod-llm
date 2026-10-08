@@ -3,12 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "slidev --open",
-    "build": "slidev build",
-    "export": "slidev export",
-    "dev:cto": "slidev --open slides-cto.md",
-    "build:cto": "slidev build slides-cto.md",
-    "export:cto": "slidev export slides-cto.md"
+    "dev:meetup": "slidev decks/meetup/slides.md --open",
+    "dev:cto": "slidev decks/cto/slides.md --open",
+    "build:meetup": "slidev build decks/meetup/slides.md --out ../../dist/meetup",
+    "build:cto": "slidev build decks/cto/slides.md --out ../../dist/cto",
+    "export:meetup": "slidev export decks/meetup/slides.md",
+    "export:cto": "slidev export decks/cto/slides.md"
   },
   "devDependencies": {
     "@slidev/cli": "^52.1.0",

@@ -1,36 +1,18 @@
 # Hosting an LLM in production
 
-Slidev deck for a meetup talk on 2 Sept 2026. Speaker: Dan Harper.
-
-There is also a shorter CTO cut in `slides-cto.md`.
+Slidev decks for Dan Harper's talk on self-hosting LLMs.
 
 Node runs in Docker Compose. You do not need Node on the host.
 
-## Run
+## Decks
 
-Meetup deck (default):
+| Deck | File | Docker | Node |
+| --- | --- | --- | --- |
+| Meetup (default) | `decks/meetup/slides.md` | `docker compose up` | `npm run dev:meetup` |
+| CTO talk (8 Oct 2026) | `decks/cto/slides.md` | `DECK=cto docker compose up` | `npm run dev:cto` |
 
-```bash
-docker compose up
-```
+Then open http://localhost:3030 (presenter view at http://localhost:3030/presenter).
 
-CTO deck:
+Build / export: `npm run build:meetup`, `npm run build:cto` (output in `dist/<deck>`), `npm run export:meetup`, `npm run export:cto`.
 
-```bash
-docker compose run --service-ports slidev sh -c "npm install && npx slidev --remote slides-cto.md"
-```
-
-Or with Node locally:
-
-```bash
-npm run dev        # meetup deck
-npm run dev:cto    # CTO deck
-```
-
-Then open http://localhost:3030
-
-Presenter view is at http://localhost:3030/presenter
-
-## Notes
-
-Meetup deck: `slides.md`. CTO cut: `slides-cto.md`.
+Images live in the root `public/`. Each deck has a `public` symlink to it, because Slidev serves `public/` next to the entry file.

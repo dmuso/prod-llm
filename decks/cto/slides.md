@@ -189,18 +189,14 @@ layout: center
 class: text-center
 ---
 
-# Thanks!
+# The End
 
 <img src="/questions.png" class="max-h-64 mx-auto rounded-lg mt-2" alt="" />
-
-<div class="text-2xl font-bold mt-4">Dan Harper</div>
 
 <a href="https://x.com/dan_harper" target="_blank" class="inline-flex items-center gap-2 mt-2 text-xl font-semibold !border-none">
   <img src="/x-logo.svg" class="w-6 h-6" alt="X" />
   <span>@dan_harper</span>
 </a>
-
-<div class="text-lg opacity-70 mt-3">See you at the roundtable</div>
 
 <!--
 Thanks. Short and sweet.

@@ -73,9 +73,7 @@ class: text-center
 
 # Your bill shape is your usage shape
 
-<div class="text-lg opacity-70 font-normal mt-1">Decided by your product's usage shape, not by the model</div>
-
-<img src="/vram-concurrency.png" class="max-h-80 mx-auto rounded-lg mt-2" alt="" />
+<img src="/bus-vs-motorbike.jpg" class="max-h-85 mx-auto rounded-lg mt-2" alt="" />
 
 <!--
 Your bill shape is decided by your product's usage shape, not by the model.
@@ -89,6 +87,8 @@ Agentic loop. 50x the use.
 On tokens, that's 50x the bill. On four cards, it's the same four cards.
 
 200,000 cells. 20 columns x 10,000 rows. Through a token meter. Ouch.
+
+The bus is our GPU box. Flat bill, packed to the roof. The biker is per-token: paying full freight for one rider.
 
 Next slide: the receipts.
 -->

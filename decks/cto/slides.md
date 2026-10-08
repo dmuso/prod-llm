@@ -114,11 +114,11 @@ class: text-center
 <div class="grid grid-cols-[1fr_auto_1fr] gap-6 items-center mt-8 max-w-4xl mx-auto">
   <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-6">
     <div class="text-xl opacity-70">Cloud API (per token)</div>
-    <div class="text-6xl font-bold mt-4 text-red-400">$84,240</div>
+    <div class="text-6xl font-bold mt-4 text-red-400">$21,000</div>
     <div class="text-lg opacity-80 mt-2">AUD / month</div>
-    <div class="text-sm opacity-60 mt-3">at Claude Sonnet pricing</div>
+    <div class="text-sm opacity-60 mt-3">at Claude Haiku pricing</div>
   </div>
-  <div class="text-3xl font-bold text-amber-300">~13x</div>
+  <div class="text-3xl font-bold text-amber-300">~3x</div>
   <div class="rounded-xl border-2 border-gray-500 bg-white/5 p-6">
     <div class="text-xl opacity-70">Our own GPUs</div>
     <div class="text-6xl font-bold mt-4 text-green-400">$6,500</div>
@@ -136,11 +136,13 @@ One month. 27 customers. 1.5 million calls.
 
 Nearly 47 billion tokens in. 2.3 billion out.
 
-At Sonnet prices, that's about 84 grand a month. AUD.
+At Haiku prices, that's about 21 grand a month. AUD.
+
+That's like-for-like, small model vs small model. Against Sonnet it'd be about 84 grand.
 
 On our own cards? 6.5.
 
-Same workload. Thirteen times cheaper.
+Same workload. About three times cheaper.
 -->
 
 ---
